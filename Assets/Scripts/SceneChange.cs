@@ -42,4 +42,9 @@ public class SceneChange : MonoBehaviour
 
         SceneManager.LoadScene(nestScene);
     }
+
+    public void startChangeScene()
+    {
+        StartCoroutine("playOutMovieAndLoadNextScene");
+    }
 }
